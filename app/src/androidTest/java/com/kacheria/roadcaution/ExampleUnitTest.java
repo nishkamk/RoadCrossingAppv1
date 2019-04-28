@@ -1,4 +1,4 @@
-package com.example.myfirstapp.myfirstapp;
+package com.kacheria.roadcaution;
 
 import org.junit.Test;
 

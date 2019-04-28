@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/stopText"
-        android:layout_width="396dp"
-        android:layout_height="512dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="@string/stop"
         android:textAllCaps="true"
         android:textColor="@android:color/holo_red_dark"

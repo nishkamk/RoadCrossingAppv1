@@ -1,4 +1,4 @@
-package com.example.myfirstapp.myfirstapp;
+package com.kacheria.roadcaution;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.myfirstapp.myfirstapp", appContext.getPackageName());
+        assertEquals("com.kacheria.roadcaution", appContext.getPackageName());
     }
 }
