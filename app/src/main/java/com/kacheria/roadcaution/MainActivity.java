@@ -1,5 +1,6 @@
 package com.kacheria.roadcaution;
 
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -14,9 +15,10 @@ public class MainActivity extends AppCompatActivity {
     Runnable timerRunnable = new Runnable() {
         @Override
         public void run() {
-            TextView textView = (TextView) findViewById(R.id.stopText);
+            TextView textView = findViewById(R.id.stopText);
             textView.setBackgroundColor(colorChoice ? Color.RED : Color.WHITE);
             textView.setTextColor(colorChoice ? Color.WHITE : Color.RED);
+            textView.setTextSize(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ? 232 : 132 );
             colorChoice = !colorChoice;
             timerHandler.postDelayed(this, 2000);
         }
